@@ -44,10 +44,10 @@
                                     <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TqS-s6-AmK">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_music_normal" translatesAutoresizingMaskIntoConstraints="NO" id="eqg-Gn-GCY">
-                                                <rect key="frame" x="67" y="17" width="30" height="30"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_music_normal" translatesAutoresizingMaskIntoConstraints="NO" id="Ebx-av-1vx">
+                                                <rect key="frame" x="133" y="17" width="30" height="30"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="eqg-Gn-GCY" secondAttribute="height" multiplier="1:1" id="u9a-hK-UAP"/>
+                                                    <constraint firstAttribute="width" secondItem="Ebx-av-1vx" secondAttribute="height" multiplier="1:1" id="rnD-S4-S2f"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_music_normal" translatesAutoresizingMaskIntoConstraints="NO" id="g6R-9V-jbS">
@@ -62,10 +62,10 @@
                                                     <constraint firstAttribute="width" secondItem="oGl-2u-PMh" secondAttribute="height" multiplier="1:1" id="T8N-Ge-KQ2"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_music_normal" translatesAutoresizingMaskIntoConstraints="NO" id="Ebx-av-1vx">
-                                                <rect key="frame" x="133" y="17" width="30" height="30"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_music_normal" translatesAutoresizingMaskIntoConstraints="NO" id="eqg-Gn-GCY">
+                                                <rect key="frame" x="67" y="17" width="30" height="30"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Ebx-av-1vx" secondAttribute="height" multiplier="1:1" id="rnD-S4-S2f"/>
+                                                    <constraint firstAttribute="width" secondItem="eqg-Gn-GCY" secondAttribute="height" multiplier="1:1" id="u9a-hK-UAP"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
@@ -86,15 +86,23 @@
                                             <constraint firstItem="g6R-9V-jbS" firstAttribute="top" secondItem="eqg-Gn-GCY" secondAttribute="top" id="zqk-Ic-fUa"/>
                                         </constraints>
                                     </view>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iw5-YG-urw">
+                                        <rect key="frame" x="0.0" y="79" width="375" height="588"/>
+                                        <color key="backgroundColor" red="0.08235294118" green="0.12941176469999999" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="TqS-s6-AmK" firstAttribute="top" secondItem="jbO-De-YUw" secondAttribute="top" id="4fa-I8-6Mh"/>
                                     <constraint firstItem="pyT-eC-iFF" firstAttribute="width" secondItem="jbO-De-YUw" secondAttribute="width" id="B4c-dZ-xHL"/>
+                                    <constraint firstAttribute="bottom" secondItem="Iw5-YG-urw" secondAttribute="bottom" id="BgI-6C-70C"/>
                                     <constraint firstItem="pyT-eC-iFF" firstAttribute="top" secondItem="jbO-De-YUw" secondAttribute="top" id="WEq-q9-EkB"/>
                                     <constraint firstAttribute="trailing" secondItem="TqS-s6-AmK" secondAttribute="trailing" id="dIR-v7-1Gp"/>
                                     <constraint firstItem="TqS-s6-AmK" firstAttribute="leading" secondItem="jbO-De-YUw" secondAttribute="leading" id="dev-Rx-g4H"/>
+                                    <constraint firstItem="Iw5-YG-urw" firstAttribute="top" secondItem="TqS-s6-AmK" secondAttribute="bottom" constant="15" id="eyk-qI-UGl"/>
                                     <constraint firstAttribute="trailing" secondItem="pyT-eC-iFF" secondAttribute="trailing" id="hCo-Cn-bco"/>
+                                    <constraint firstAttribute="trailing" secondItem="Iw5-YG-urw" secondAttribute="trailing" id="k0Z-jg-k59"/>
+                                    <constraint firstItem="Iw5-YG-urw" firstAttribute="leading" secondItem="jbO-De-YUw" secondAttribute="leading" id="t7W-YZ-4iT"/>
                                     <constraint firstItem="pyT-eC-iFF" firstAttribute="height" secondItem="jbO-De-YUw" secondAttribute="height" id="xIC-DY-IsR"/>
                                 </constraints>
                             </view>
