@@ -17,6 +17,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"mainVC"];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+
+    
+    
+    
+    
+    
+    
+    
     return YES;
 }
 

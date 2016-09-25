@@ -1,25 +1,99 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fUo-0a-H6r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="CNo-dg-cjG">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController id="fUo-0a-H6r" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XpC-D4-d9r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iDk-Ul-0sB" kind="relationship" relationship="rootViewController" id="DM2-yZ-fC8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vQg-7K-0oh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-902" y="338"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="Dz4-gv-6UN">
+            <objects>
+                <viewController storyboardIdentifier="mainVC" id="iDk-Ul-0sB" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WIT-an-igA"/>
+                        <viewControllerLayoutGuide type="bottom" id="uAL-d0-R2B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mfm-LK-F0d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbO-De-YUw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="pyT-eC-iFF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TqS-s6-AmK">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn_music_normal" translatesAutoresizingMaskIntoConstraints="NO" id="eqg-Gn-GCY">
+                                                <rect key="frame" x="67" y="17" width="30" height="30"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn_music_normal" translatesAutoresizingMaskIntoConstraints="NO" id="g6R-9V-jbS">
+                                                <rect key="frame" x="197" y="17" width="30" height="30"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn_music_normal" translatesAutoresizingMaskIntoConstraints="NO" id="oGl-2u-PMh">
+                                                <rect key="frame" x="266" y="17" width="30" height="30"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn_music_normal" translatesAutoresizingMaskIntoConstraints="NO" id="Ebx-av-1vx">
+                                                <rect key="frame" x="139" y="17" width="30" height="30"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.082352941176470587" green="0.12941176470588237" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="xOD-rz-YnO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="TqS-s6-AmK" firstAttribute="top" secondItem="jbO-De-YUw" secondAttribute="top" id="4fa-I8-6Mh"/>
+                                    <constraint firstItem="pyT-eC-iFF" firstAttribute="width" secondItem="jbO-De-YUw" secondAttribute="width" id="B4c-dZ-xHL"/>
+                                    <constraint firstItem="pyT-eC-iFF" firstAttribute="top" secondItem="jbO-De-YUw" secondAttribute="top" id="WEq-q9-EkB"/>
+                                    <constraint firstAttribute="trailing" secondItem="TqS-s6-AmK" secondAttribute="trailing" id="dIR-v7-1Gp"/>
+                                    <constraint firstItem="TqS-s6-AmK" firstAttribute="leading" secondItem="jbO-De-YUw" secondAttribute="leading" id="dev-Rx-g4H"/>
+                                    <constraint firstAttribute="trailing" secondItem="pyT-eC-iFF" secondAttribute="trailing" id="hCo-Cn-bco"/>
+                                    <constraint firstItem="pyT-eC-iFF" firstAttribute="height" secondItem="jbO-De-YUw" secondAttribute="height" id="xIC-DY-IsR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jbO-De-YUw" secondAttribute="trailing" id="0B1-0M-dGW"/>
+                            <constraint firstItem="uAL-d0-R2B" firstAttribute="top" secondItem="jbO-De-YUw" secondAttribute="bottom" id="I5t-Xu-xf5"/>
+                            <constraint firstItem="jbO-De-YUw" firstAttribute="top" secondItem="WIT-an-igA" secondAttribute="bottom" id="MhV-Bp-YnT"/>
+                            <constraint firstItem="jbO-De-YUw" firstAttribute="leading" secondItem="Mfm-LK-F0d" secondAttribute="leading" id="vcn-xh-rmw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mrR-ci-fuF"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PkG-c3-YS0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-419.5" y="337.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="640" height="1136"/>
+        <image name="btn_music_normal" width="58" height="61"/>
+    </resources>
 </document>

@@ -15,6 +15,7 @@
 		97AF21BE1D9772F800E25DA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97AF21BC1D9772F800E25DA1 /* LaunchScreen.storyboard */; };
 		97AF21C91D9772F800E25DA1 /* SleepTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AF21C81D9772F800E25DA1 /* SleepTests.m */; };
 		97AF21D41D9772F800E25DA1 /* SleepUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AF21D31D9772F800E25DA1 /* SleepUITests.m */; };
+		97AF21E31D978D5A00E25DA1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AF21E21D978D5A00E25DA1 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		97AF21CF1D9772F800E25DA1 /* SleepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97AF21D31D9772F800E25DA1 /* SleepUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepUITests.m; sourceTree = "<group>"; };
 		97AF21D51D9772F800E25DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97AF21E11D978D5A00E25DA1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		97AF21E21D978D5A00E25DA1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				97AF21B21D9772F800E25DA1 /* AppDelegate.m */,
 				97AF21B41D9772F800E25DA1 /* ViewController.h */,
 				97AF21B51D9772F800E25DA1 /* ViewController.m */,
+				97AF21E11D978D5A00E25DA1 /* MainViewController.h */,
+				97AF21E21D978D5A00E25DA1 /* MainViewController.m */,
 				97AF21B71D9772F800E25DA1 /* Main.storyboard */,
 				97AF21BA1D9772F800E25DA1 /* Assets.xcassets */,
 				97AF21BC1D9772F800E25DA1 /* LaunchScreen.storyboard */,
@@ -273,6 +278,7 @@
 				97AF21B61D9772F800E25DA1 /* ViewController.m in Sources */,
 				97AF21B31D9772F800E25DA1 /* AppDelegate.m in Sources */,
 				97AF21B01D9772F800E25DA1 /* main.m in Sources */,
+				97AF21E31D978D5A00E25DA1 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +502,7 @@
 				97AF21DA1D9772F900E25DA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97AF21DB1D9772F900E25DA1 /* Build configuration list for PBXNativeTarget "SleepTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +511,7 @@
 				97AF21DD1D9772F900E25DA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97AF21DE1D9772F900E25DA1 /* Build configuration list for PBXNativeTarget "SleepUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +520,7 @@
 				97AF21E01D9772F900E25DA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
